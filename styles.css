@@ -1,5 +1,5 @@
 body {
-    background-image: url('background-img.jpg');
+    background-image: url('media/background.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -8,20 +8,19 @@ body {
 }
 h1 {
     color: #fff;
-    text-align: center;
+    text-align: left;
     margin-top: 20px;
     font-family: Arial, sans-serif;
-    background-color: rgba(80, 126, 226, 0.8);
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 65px;
 }
 ul {
     list-style-type: none;
-    padding: 20px;
-    margin: 0;
-    background-color: rgba(255, 255, 255, 0.8);
+    padding: 100px;
+    color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 25px;
+    margin: 0;
 }
 ul li {
     margin-bottom: 10px 0;
