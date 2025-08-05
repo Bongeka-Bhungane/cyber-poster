@@ -1,7 +1,15 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100%;   
+}
+
 body {
-    background-image: url('background-img.jpg');
-    background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
     margin: 0;
@@ -10,8 +18,15 @@ body {
     align-items: center;
     padding: 20px;
     box-sizing: border-box;
+    width: 100%;
+    justify-content: center;
 }
 
+section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 h1 {
     color: #fff;
     text-align: center;
@@ -28,13 +43,12 @@ h1 {
 ul {
     list-style-type: none;
     padding: 20px;
-    margin: 0;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 600px;
     width: 100%;
-    box-sizing: border-box;
+    margin-top: 100px;
 }
 
 ul li {
@@ -43,20 +57,36 @@ ul li {
     word-wrap: break-word;
 }
 
-@media (max-width: 786px) {
-    body {
-        padding: 10px;
-    }
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.4rem;
+    padding: 8px 15px;
+  }
 
-    h1 {
-        font-size: 1.2rem;
-    }
+  ul li {
+    font-size: 0.95rem;
+  }
+}
 
-    ul {
-        padding: 10px;
-    }
+@media screen and (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
 
-    ul li {
-        font-size: 0.9rem;
-    }
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  ul {
+    padding: 15px;
+  }
+
+  ul li {
+    font-size: 0.9rem;
+    gap: 8px;
+  }
+
+  ul li img {
+    width: 15px;
+  }
 }
